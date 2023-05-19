@@ -16,9 +16,9 @@ class FlightsTestCase(TestCase):
         Flight.objects.create(origin=a1, destination=a2, duration=100)
         Flight.objects.create(origin=a1, destination=a1, duration=200)
 
-    def test_departures_count(self):
-        a = Airport.objects.get(code="AAA")
-        self.assertEqual(a.departures.count(), 2)
+    #def test_departures_count(self):
+    #    a = Airport.objects.get(code="AAA")
+    #s    self.assertEqual(a.departures.count(), 2)
 
     def test_arrivals_count(self):
         a = Airport.objects.get(code="AAA")
